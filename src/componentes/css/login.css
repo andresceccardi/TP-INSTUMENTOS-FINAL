@@ -1,0 +1,55 @@
+.container {
+    background-color: #242424; /* Fondo claro para el contenedor principal */
+  }
+  
+  .card {
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    background-color: #d9d9d9; /* Fondo blanco para la tarjeta */
+    border-color: #242424;
+  }
+  
+  .card h2 {
+    color: #ff0000; /* Color del título */
+  }
+  
+  .form-label {
+    color: #555555; /* Color de las etiquetas de los campos de formulario */
+  }
+  
+  .form-control {
+    border: 1px solid #004e9c; /* Borde del campo de entrada */
+    color: #495057; /* Color del texto del campo de entrada */
+  }
+  
+  .form-control:focus {
+    border-color: #80bdff;
+    box-shadow: 0 0 0 0.2rem rgba(0, 123, 255, 0.25);
+  }
+  
+  .btn-primary {
+    background-color: #007bff; /* Color del botón */
+    border-color: #007bff; /* Borde del botón */
+  }
+  
+  .btn-primary:hover {
+    background-color: #0056b3; /* Color del botón al pasar el mouse */
+    border-color: #0056b3; /* Borde del botón al pasar el mouse */
+  }
+  
+  .text-danger {
+    color: #dc3545; /* Color del texto de error */
+  }
+  
+  .text-center {
+    color: #ffffff; /* Color del texto centrado */
+  }
+  
+  .card p a {
+    color: #007bff; /* Color del enlace de registro */
+  }
+  
+  .card p a:hover {
+    color: #0056b3; /* Color del enlace de registro al pasar el mouse */
+  }
+  
