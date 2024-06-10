@@ -22,8 +22,9 @@
   /* Estilos para la información del instrumento */
   .instrumento-info {
     flex: 1; /* Hace que este contenedor ocupe el 50% del espacio */
-    padding-left: 20px; /* Espacio entre los contenedores */
+    padding-left:200px; /* Espacio entre los contenedores */
     text-align: left;
+
 }
   
   /* Estilos para el título del instrumento */
@@ -144,20 +145,26 @@
   span {
     margin: 0 10px;
   }
-
-  .instrumento {
-    display: flex;
-    align-items: center;
-    padding: 20px;
-    border: 1px solid #e0e0e0;
-    border-radius: 5px;
-    background-color: #fff;
-    margin-bottom: 20px;
-    flex-direction: row;
-  }
+.instrumento {
+  display: flex;
+  align-items: center;
+  padding: 10px; /* Reducir el padding si es necesario */
+  border: 1px solid #e0e0e0;
+  border-radius: 5px;
+  background-color: #fff;
+  margin: 20px auto; /* Centrar el contenedor y reducir el margen si es necesario */
+  flex-direction: row; /* Alinear elementos en una fila horizontal */
+  width: 80%; /* Especificar un ancho. Ajustar según sea necesario */
+}
 
   .botones-container {
     display: flex;
     align-items: center;
   }
-  
+
+
+.instrumento img {
+  margin-left: 80px; /* Espacio entre la imagen y el texto */
+  /*max-width: 100px;  Ajustar imagen al ancho del contenedor */
+  /*margin-right: 20px;  Espacio entre la imagen y el texto */
+}

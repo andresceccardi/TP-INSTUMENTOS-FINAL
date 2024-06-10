@@ -6,11 +6,8 @@ const Home: React.FC = () => {
   return (
     <div className="container text-center my-5">
       <div className="home-container">
-        <h2 className="display-4">Sounds Of A Town</h2>
-        <p className="lead">
-          Sounds Of A Town es una tienda de instrumentos musicales con más de 15 años de experiencia.
-          Tenemos el conocimiento y la capacidad para informarte acerca de las mejores elecciones para tu compra musical.
-        </p>
+      <h2 className="display-4">Sounds Of A Town</h2>
+      <p>Tu tienda de intrumentos musicales de confianza</p>
         <Slider />
       </div>
     </div>
@@ -18,3 +15,9 @@ const Home: React.FC = () => {
 };
 
 export default Home;
+
+/* 
+      
+        
+        
+*/

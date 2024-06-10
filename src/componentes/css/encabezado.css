@@ -1,6 +1,10 @@
+.custom-navbar {
+    background-color: #171212 !important;
+}
+
 nav {
     background-color: #242424;
-    padding: 10px;
+    padding: 0px; 
 }
 
 nav ul {
@@ -8,11 +12,13 @@ nav ul {
     margin: 0;
     padding: 0;
     background-color: #242424;
+    
 }
 
 nav ul li {
     display: inline-block;
     margin-right: 10px;
+    
 }
 
 nav ul li a {
@@ -22,7 +28,40 @@ nav ul li a {
     background-color: #242424;
 }
 
-nav ul li a:hover {
-    background-color: #242424;
+nav.navbar ul.navbar-nav li.nav-item a.nav-link {
+    color: #ffffff; /* Tu color deseado */
+    background-color: #ff000000;
+
 }
 
+
+
+.navbar-dark .navbar-nav .nav-link {
+    color: #ffffff; /* Cambia esto al color que prefieras */
+        background-color: #ffffff00;
+
+}
+
+.navbar-dark .navbar-nav .btn-link {
+    color: #ffffff; /* Cambia esto al color que prefieras */
+}
+
+.navbar-dark .navbar-nav .nav-link:hover {
+    color: #ffffff; /* Cambia esto al color que prefieras */
+    text-shadow: 0 0 5px #6d7be2, 0 0 10px #6d7be2, 0 0 15px #6d7be2, 0 0 20px #6d7be2; /* Efecto de neón */
+}
+
+.navbar-dark .navbar-nav .btn-link:hover {
+    color: #ffffff; /* Cambia esto al color que prefieras */
+    text-shadow: 0 0 5px #ff0000, 0 0 10px #ff0000, 0 0 15px #ff0000, 0 0 20px #ff0000; /* Efecto de neón */
+}
+
+nav ul li a:hover {
+    color: #00f; /* Cambia esto al color azul que prefieras */
+    text-shadow: 0 0 5px #00f, 0 0 10px #00f, 0 0 15px #00f, 0 0 20px #00f; /* Esto crea el efecto de neón */
+}
+
+.navbar-brand:hover {
+    color: #00f; /* Cambia esto al color azul que prefieras */
+    text-shadow: 0 0 5px #00f, 0 0 10px #00f, 0 0 15px #00f, 0 0 20px #00f; /* Esto crea el efecto de neón */
+}

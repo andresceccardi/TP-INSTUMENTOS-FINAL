@@ -1,12 +1,15 @@
 .lista-instrumentos {
-    display: flex;
-    flex-direction: column; 
-  }
+  display: flex;
+  flex-direction: column;
+  justify-content: center; /* Centra los elementos verticalmente */
+  padding-left: 50px;
+}
   
   .instrumento {
     display: flex; 
     border-bottom: 1px solid #ccc; 
     padding: 10px 0; 
+    
   }
 
   .detalle-instrumento {

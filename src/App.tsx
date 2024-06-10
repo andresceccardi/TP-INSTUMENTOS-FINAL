@@ -10,6 +10,7 @@ import DondeEstamos from './componentes/DondeEstamos';
 import RolUsuario from './controlAcceso/RolUsuario';
 import { Roles } from './entidades/Roles';
 import ChartsGoogle from './componentes/ChartsGoogle';
+import Footer from './componentes/Footer';
 //import './componentes/css/encabezado.css';
 //import './App.css';
 
@@ -50,6 +51,7 @@ function App() {
                     </Routes>
                 </Suspense>
             </main>
+            <Footer />
         </div>
 
     );
