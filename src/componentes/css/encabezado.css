@@ -7,6 +7,11 @@ nav {
     padding: 0px; 
 }
 
+
+.navbar-nav.ms-auto {
+    background-color: #171212;
+}
+
 nav ul {
     list-style-type: none;
     margin: 0;

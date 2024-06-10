@@ -3,6 +3,7 @@
   flex-direction: column;
   justify-content: center; /* Centra los elementos verticalmente */
   padding-left: 50px;
+  margin-top: -70px;
 }
   
   .instrumento {

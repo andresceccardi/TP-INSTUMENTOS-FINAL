@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from 'react';
 import { Chart } from 'react-google-charts';
 import { getOrdersByInstrument, getOrdersByMonth } from '../servicios/FuncionesInstrumento';
+import './css/Stats.css';
 
 
 interface OrdersByMonth {
@@ -51,9 +52,7 @@ const ChartsGoogle: React.FC = () => {
   }
 
   return (
-    <div>
-      <h1>Gráficos de Pedidos</h1>
-
+    <div className="stats align-items-center">
       <div style={{ marginBottom: '20px' }}>
         <Chart
           chartType="BarChart"

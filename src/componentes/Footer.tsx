@@ -2,7 +2,7 @@ import './css/Footer.css';
 
 const Footer = () => {
     return (
-        <div className="container">
+        <div className="container-empty">
             <footer className="d-flex flex-wrap justify-content-between align-items-center py-3 my-4 border-top">
                 <p className="col-md-4 mb-0">© 2024 SOAT (Sounds Of a Town)</p>
 
@@ -10,7 +10,7 @@ const Footer = () => {
                     <img src="../img/midi_footer.png" alt="Descripción de la imagen" width="80" height="80" />
                 </a>    
 
-                <ul className="nav col-md-4 justify-content-end">
+                <ul className="nav col-md-4 align-items-center">
                     <li className="nav-item"><a href="#" className="nav-link px-2">Inicio</a></li>
                     <li className="nav-item"><a href="#" className="nav-link px-2">Cotizacion</a></li>
                     <li className="nav-item"><a href="#" className="nav-link px-2">FAQs</a></li>
