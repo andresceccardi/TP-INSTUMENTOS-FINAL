@@ -23,9 +23,9 @@ const Login: React.FC = () => {
   };
 
   return (
-    <div className="container d-flex justify-content-center align-items-center vh-100">
-      <div className="card p-4">
-        <h2 className="text-center mb-4">Login</h2>
+    <div className="container d-flex justify-content-center align-items-center">
+      <div className="card login">
+        <h2 className="text-center mb-4">S O A T </h2>
         <form onSubmit={handleLogin}>
           <div className="mb-3">
             <label htmlFor="nombreUsuario" className="form-label">Nombre de Usuario</label>

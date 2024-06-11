@@ -1,11 +1,14 @@
+
 .cart {
-  max-width: 600px;
+  max-width: 5000px;
   margin: 0 auto;
   padding: 20px;
-  background-color: #f9f9f9;
-  border-radius: 10px;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  background-color: #00000000;
+  border-radius: none;
+  box-shadow: none;
   text-align: center;
+  height: 356px;
+  margin-top: 80px;
 }
 
 .cart ul {
@@ -88,7 +91,7 @@
 
 .cart h3 {
   text-align: center;
-  color: #333;
+  color: #ffffff;
   margin-top: 20px;
 }
 

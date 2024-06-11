@@ -5,56 +5,57 @@
   padding-left: 50px;
   margin-top: -70px;
 }
+
   
-  .instrumento {
+.instrumento {
     display: flex; 
     border-bottom: 1px solid #ccc; 
     padding: 10px 0; 
-    
-  }
+}
 
-  .detalle-instrumento {
+.detalle-instrumento {
     display: flex; 
     border-bottom: 1px solid #ccc; 
     padding: 10px 0;
 }  
-  .instrumento img {
+
+.instrumento img {
     width: 200px; 
     height: 200px; 
     margin-right: 20px; 
-  }
+}
 
-  .detalle-instrumento img {
+.detalle-instrumento img {
     width: 400px; 
     height: 400px; 
     margin-right: 20px; 
-  }
+}
   
-  .instrumento-info {
+.instrumento-info {
     flex: 1; 
   }
   
-  .instrumento h3 {
+.instrumento h3 {
     margin-top: 0; 
-  }
+}
   
-  .instrumento p {
+.instrumento p {
     margin: 5px 0; 
-  }
+}
 
-  .envio-gratis {
+.envio-gratis {
     color: green;
-  }
+}
 
-  .costo-envio {
+.costo-envio {
     color:rgb(248, 152, 9);
-  }
+}
 
-  .instrumento-precio {
+.instrumento-precio {
     font-size: 24px;
-  }
+}
 
-  .titulo-instrumento{
+.titulo-instrumento{
     font-weight: normal;
     font-size: 20px;
-  }  
+}  

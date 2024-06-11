@@ -3,7 +3,7 @@ import './css/Footer.css';
 const Footer = () => {
     return (
         <div className="container-empty">
-            <footer className="d-flex flex-wrap justify-content-between align-items-center py-3 my-4 border-top">
+            <footer className="d-flex flex-wrap align-items-center py-3 border-top">
                 <p className="col-md-4 mb-0">© 2024 SOAT (Sounds Of a Town)</p>
 
                 <a href="/" className="col-md-4 d-flex align-items-center justify-content-center mb-3 mb-md-0 me-md-auto link-dark text-decoration-none">

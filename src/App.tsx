@@ -12,7 +12,7 @@ import { Roles } from './entidades/Roles';
 import ChartsGoogle from './componentes/ChartsGoogle';
 import Footer from './componentes/Footer';
 //import './componentes/css/encabezado.css';
-//import './App.css';
+import './App.css';
 
 
 const Productos = lazy(() => import('./componentes/Productos'));

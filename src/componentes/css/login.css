@@ -1,20 +1,21 @@
 .container {
-    background-color: #242424; /* Fondo claro para el contenedor principal */
+    background-color: #00000000; /* Fondo claro para el contenedor principal */
+
   }
   
   .card {
     border-radius: 10px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    background-color: #929292; /* Fondo blanco para la tarjeta */
-    border-color: #242424;
+    background-color: #171212; /* Fondo blanco para la tarjeta */
+    border-color: #171212;
   }
   
   .card h2 {
-    color: #000000; /* Color del título */
+    color: #ffffff; /* Color del título */
   }
   
   .form-label {
-    color: #000000; /* Color de las etiquetas de los campos de formulario */
+    color: #ffffff; /* Color de las etiquetas de los campos de formulario */
     text-shadow: #242424;
   }
   
@@ -53,4 +54,9 @@
   .card p a:hover {
     color: #0056b3; /* Color del enlace de registro al pasar el mouse */
   }
+
+.login{
+padding-top: none;
+padding-bottom: none;
+}
   

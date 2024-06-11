@@ -2,6 +2,7 @@ import { useEffect, useState } from "react";
 import { createPreferenceMP } from "../servicios/FuncionesInstrumento";
 import PreferenceMP from "../entidades/mercadopago/PreferenceMP";
 import { Wallet, initMercadoPago } from "@mercadopago/sdk-react";
+import './css/CheckoutMP.css';
 
 function CheckoutMP ({montoCarrito = 0}) {
     const [idPreference, setIdPreference ] = useState<string>('');

@@ -1,0 +1,9 @@
+.cart {
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #00000000;
+    border-radius: none;
+    box-shadow:none;
+    text-align: center;
+}

@@ -21,9 +21,9 @@ const Register: React.FC = () => {
   };
 
   return (
-    <div className="container d-flex justify-content-center align-items-center vh-100">
+    <div className="container d-flex justify-content-center align-items-center">
       <div className="card p-4">
-        <h2 className="text-center mb-4">Registro</h2>
+        <h2 className="text-center mb-4">Registrarse</h2>
         <form onSubmit={handleRegister}>
           <div className="mb-3">
             <label htmlFor="nombreUsuario" className="form-label">Nombre de Usuario</label>
