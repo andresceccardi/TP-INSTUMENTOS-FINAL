@@ -9,6 +9,9 @@ const Home: React.FC = () => {
       <h2 className="display-4">Sounds Of A Town</h2>
       <p>Tu tienda de intrumentos musicales de confianza</p>
         <Slider />
+        <p>
+          En SOAT (Sounds Of A Town) encontrarás una amplia variedad de instrumentos musicales, desde guitarras, bajos, baterías, teclados, micrófonos, hasta accesorios y equipo de audio profesional.
+        </p>
       </div>
     </div>
   );
