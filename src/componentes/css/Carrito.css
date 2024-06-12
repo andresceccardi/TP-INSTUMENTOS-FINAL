@@ -7,7 +7,7 @@
   border-radius: none;
   box-shadow: none;
   text-align: center;
-  height: 356px;
+  height: 500px;
   margin-top: 80px;
 }
 
@@ -22,7 +22,8 @@
   justify-content: space-between;
   padding: 10px 0;
   border-bottom: 1px solid #ddd;
-  text-align: left; /* Cambiado a left para que el contenido se alinee a la izquierda */
+  text-align: left;
+  
 }
 
 .cart-item img {
@@ -31,7 +32,16 @@
 }
 
 .cart-item-info {
-  flex-grow: 1; /* Ocupa el espacio disponible para empujar el botón "Eliminar" a la derecha */
+  flex-grow: 1;
+  color: #fff !important;
+}
+
+.cart-item-info strong {
+  color: #fff;
+}
+
+.cart-item-info b {
+  color: #fff;
 }
 
 .cart-item div {

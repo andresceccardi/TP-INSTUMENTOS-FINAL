@@ -1,0 +1,10 @@
+/* ModalStyles.css */
+.modal-content {
+    background-color: #242424;
+    color: white;
+  }
+  
+  .modal-content .btn-danger,
+  .modal-content .btn-excel {
+    color: white;
+  }

@@ -5,6 +5,7 @@ import 'react-datepicker/dist/react-datepicker.css';
 import moment from 'moment';
 import { generarExcel } from '../servicios/FuncionesInstrumento';
 import "./../componentes/css/GrillaInstrumentos.css";
+import './css/ModalExcel.css';
 
 const GenerarExcelButton: React.FC = () => {
   const [showModal, setShowModal] = useState(false);
