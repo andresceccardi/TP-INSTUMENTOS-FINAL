@@ -13,10 +13,14 @@
 .imagenydescripcion {
   flex: 1; /* Hace que este contenedor ocupe el 50% del espacio */
   padding-right: 20px; /* Espacio entre los contenedores */
+  margin-left: 100px;  
 }
 
-  .detalle-instrumento img {
-    max-width: 100%; /* Ajustar imagen al ancho del contenedor */
+.detalle-instrumento img {
+  max-width: 100%; /* Ajustar imagen al ancho del contenedor */
+  width: 50%; /* Ajustar el ancho de la imagen al 50% del contenedor */
+  height: auto; /* Mantener la proporción de la imagen */
+  /*margin-left: 100px;*/
 }
   
   /* Estilos para la información del instrumento */
@@ -26,6 +30,7 @@
     text-align: left;
 
 }
+
   
   /* Estilos para el título del instrumento */
   .titulo-instrumento {
@@ -69,6 +74,7 @@
   .descripcion-instrumento {
     width: 100%; /* Establece el ancho de la descripción al 50% del contenedor */
     margin: 0 auto; /* Centra la descripción horizontalmente */
+    padding-top: 20px;
   }
   
   /* Estilos para el botón "Agregar al Carrito" */
@@ -88,19 +94,18 @@
   }
 
   .btn-generar-pdf {
-    background-color: #f7ea3c;
-    color: #000000;
+    background: transparent;
     border: none;
-    border-radius: 5px;
-    padding: 10px 20px;
-    font-size: 1rem;
-    cursor: pointer;
-    margin-top: 20px;
-    margin-left: 5px; /* Añade espacio arriba del botón */
+    font-size: 40px;
+    color: red;
+    transition: transform 0.3s ease-in-out; /* Agrega esta línea */
+
   }
 
   .btn-generar-pdf:hover {
-    background-color: #c0b407;
+    background-color: transparent;
+    transform: scale(1.2); /* Agrega esta línea */
+
   }
 
   .btn-ver-detalle {

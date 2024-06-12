@@ -8,3 +8,25 @@
   .modal-content .btn-excel {
     color: white;
   }
+
+  /* ButtonStyles.css */
+/* ButtonStyles.css */
+.btn-excel {
+    background: transparent;
+    border: none;
+    margin-left: 20px;
+    font-size: 50px;
+    color: green;
+}
+
+.btn-excel:hover {
+    background: transparent;
+}
+
+.btn-excel-2{
+    font-size: 20px;
+    color: white;
+    background-color: green;
+    border: transparent;
+
+}

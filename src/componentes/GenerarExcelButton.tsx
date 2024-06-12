@@ -6,6 +6,8 @@ import moment from 'moment';
 import { generarExcel } from '../servicios/FuncionesInstrumento';
 import "./../componentes/css/GrillaInstrumentos.css";
 import './css/ModalExcel.css';
+import { FaFileExcel } from 'react-icons/fa';
+
 
 const GenerarExcelButton: React.FC = () => {
   const [showModal, setShowModal] = useState(false);
@@ -52,8 +54,9 @@ const GenerarExcelButton: React.FC = () => {
 
   return (
     <>
-      <Button className ="btn-excel" variant="primary" onClick={() => setShowModal(true)}>
-        Generar Excel
+    
+      <Button className="btn-excel" variant="primary" onClick={() => setShowModal(true)}>
+      <FaFileExcel />
       </Button>
 
       <Modal show={showModal} onHide={() => setShowModal(false)}>
@@ -89,7 +92,7 @@ const GenerarExcelButton: React.FC = () => {
           <Button className = "btn-danger" variant="secondary" onClick={() => setShowModal(false)}>
             Cancelar
           </Button>
-          <Button className = "btn-excel" variant="primary" onClick={handleGenerarExcel}>
+          <Button className = "btn-excel-2" variant="primary" onClick={handleGenerarExcel}>
             Generar Excel
           </Button>
         </Modal.Footer>

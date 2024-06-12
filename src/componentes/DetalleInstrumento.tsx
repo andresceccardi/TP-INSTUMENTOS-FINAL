@@ -5,6 +5,8 @@ import { generarPdf, getInstrumentoByIdFetch } from '../servicios/FuncionesInstr
 import camionIcono from '../../img/camion.png';
 import './css/DetalleInstrumento.css';
 import { useCarrito } from '../hooks/useCarrito';
+import { FaFilePdf } from 'react-icons/fa';
+
 
 function DetalleInstrumento() {
   const { id } = useParams<{ id?: string }>();
@@ -104,8 +106,10 @@ function DetalleInstrumento() {
               </div>
             )}
 
-            <button className="btn-generar-pdf" onClick={handleGenerarPDF}>Generar PDF</button>
-
+              <button className="btn-generar-pdf" onClick={handleGenerarPDF}>
+                <FaFilePdf />
+              </button>
+              
           </div>
         </div>
       ) : (
