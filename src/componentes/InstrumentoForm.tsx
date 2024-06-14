@@ -119,7 +119,7 @@ function InstrumentoFormulario() {
                     </div>
                     <div className="mb-3">
                         <label htmlFor="txtPrecio" className="form-label">Precio</label>
-                        <input type="number" id='txtPrecio' className="form-control" placeholder="Ingrese el precio" value={instrumento.precio || 0} onChange={e => setInstrumento({ ...instrumento, precio: parseFloat(e.target.value) })} />
+                        <input type="text" id='txtPrecio' className="form-control" placeholder="Ingrese el precio" value={instrumento.precio || 0} onChange={e => setInstrumento({ ...instrumento, precio: parseFloat(e.target.value) })} />
                     </div>
                     <div className="mb-3">
                         <label htmlFor="txtImagen" className="form-label">Imagen</label>

@@ -5,6 +5,10 @@ import './css/GrillaInstrumentos.css'
 import { Roles } from '../entidades/Roles';
 import Usuario from '../entidades/Usuario';
 import GenerarExcelButton from './GenerarExcelButton';
+import { FaPlus } from 'react-icons/fa';
+import { Dropdown } from 'react-bootstrap';
+
+
 
 function GrillaInstrumentos() {
     const [instrumentos, setInstrumentos] = useState<Instrumento[]>([]);
@@ -34,8 +38,8 @@ function GrillaInstrumentos() {
         return Array.from(categoriasUnicas);
     };
 
-    const handleCategoriaChange = (e: React.ChangeEvent<HTMLSelectElement>) => {
-        setFiltroCategoria(e.target.value);
+    const handleCategoriaChange = (eventKey: string | null) => {
+        setFiltroCategoria(eventKey || '');
     };
 
     const eliminarInstrumento = async (idInstrumento: number) => {
@@ -56,17 +60,26 @@ function GrillaInstrumentos() {
             <div className="container text-center">
                 <br />
                 {(usuarioLogueado.rol === Roles.ADMIN) &&
-                    <a className="btn btn-primary" href={`/formulario/0`}>Nuevo</a>
+                    <a className="btn btn-primary btn-primary-custom no-outline" href={`/formulario/0`}>
+                        <FaPlus />
+                    </a>
                 }
                 <GenerarExcelButton />
                 <div className="filtro-categoria">
-                    <select value={filtroCategoria} onChange={handleCategoriaChange}>
-                        <option value="">Todas las categorías</option>
-                        {categorias.map((categoria, index) => (
-                            <option key={index} value={categoria}>{categoria}</option>
-                        ))}
-                    </select>
+                    <Dropdown onSelect={handleCategoriaChange} className='mi-dropdown'>
+                        <Dropdown.Toggle variant="success" id="dropdown-basic">
+                            {filtroCategoria || "Todas las categorías"}
+                        </Dropdown.Toggle>
+
+                        <Dropdown.Menu>
+                            <Dropdown.Item eventKey="">Todas las categorías</Dropdown.Item>
+                            {categorias.map((categoria, index) => (
+                                <Dropdown.Item key={index} eventKey={categoria}>{categoria}</Dropdown.Item>
+                            ))}
+                        </Dropdown.Menu>
+                    </Dropdown>
                 </div>
+                
                 <div className="row">
                     <div className="col">
                         <b>ID</b>
@@ -144,6 +157,7 @@ function GrillaInstrumentos() {
             </div>
         </>
     );
+
 }
 
 export default GrillaInstrumentos;

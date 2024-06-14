@@ -8,6 +8,7 @@
   background-color: #fff;
   margin-bottom: 20px;
   flex-direction: row; /* Alinear elementos en una fila horizontal */
+  margin-left: 100px;
 }
 
 .imagenydescripcion {

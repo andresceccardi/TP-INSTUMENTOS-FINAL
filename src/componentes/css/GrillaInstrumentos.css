@@ -43,10 +43,19 @@
     color: #fff;
     margin-left: 2%;
     border: #0f6b0c;
+    transition: transform 0.3s ease-in-out; /* Agrega esta línea */
 }
 
 .btn-excel:hover {
-    background-color: #0f6b0c;
+    background-color: transparent;
+    color: green;
+    transform: scale(1.2); /* Agrega esta línea */
+}
+.btn.btn-excel.no-outline:focus, .btn.btn-excel.no-outline:active {
+    outline: none !important;
+    box-shadow: none !important;
+    background-color: transparent !important; 
+    border-color: transparent;/* Este es el color de fondo predeterminado para .btn-primary en Bootstrap. Ajusta según sea necesario. */
 }
 
 .btn-info {
@@ -73,3 +82,34 @@
     width: 100%;
 }
 
+/* ButtonStyles.css */
+.btn-primary-custom {
+    background-color: transparent;
+    border-color: transparent;
+    font-size: 50px;
+
+    transition: transform 0.3s ease-in-out; /* Agrega esta línea */
+
+    /* Agrega aquí las propiedades que desees */
+}
+
+.btn-primary-custom:hover {
+    background-color: transparent;
+    color: white;
+    border-color: transparent;
+    transform: scale(1.2); 
+}
+
+.mi-dropdown .dropdown-toggle {
+    /* Estilos para el botón que muestra el menú desplegable */
+    background-color: #171212;
+    color: white;
+    border-color: none;
+}
+
+.btn.btn-primary.no-outline:focus, .btn.btn-primary.no-outline:active {
+    outline: none !important;
+    box-shadow: none !important;
+    background-color: transparent !important; 
+    border-color: transparent;/* Este es el color de fondo predeterminado para .btn-primary en Bootstrap. Ajusta según sea necesario. */
+}

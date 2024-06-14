@@ -8,6 +8,7 @@ const urlCategorias = 'http://localhost:8080/categorias';
 const urlPedidos = 'http://localhost:8080/guardar-pedido';
 const urlUltimoPedido = 'http://localhost:8080/pedidos/ultimo';
 const urlReporteExcel = 'http://localhost:8080/reportes/generarExcel';
+
 const token = localStorage.getItem('token');
 
 if (token) {
@@ -308,7 +309,7 @@ export const generarPdf = async (instrumento: Instrumento) => {
       const url = window.URL.createObjectURL(blob);
       const a = document.createElement('a');
       a.href = url;
-      a.download = 'detalle_instrumento.pdf'; // Nombre del archivo para descargar
+      a.download = 'detalle_' + instrumento.instrumento + '.pdf'; // Nombre del archivo para descargar
       document.body.appendChild(a);
       a.click();
       document.body.removeChild(a);

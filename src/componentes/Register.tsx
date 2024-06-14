@@ -9,6 +9,9 @@ const Register: React.FC = () => {
   const [rol, setRol] = useState('Visor');
   const [mensaje, setMensaje] = useState('');
 
+
+  //quiero mostrar en el console log el mensaje de error
+  
   const handleRegister = async (e: React.FormEvent) => {
     e.preventDefault();
     try {
@@ -68,5 +71,6 @@ const Register: React.FC = () => {
     </div>
   );
 };
+
 
 export default Register;

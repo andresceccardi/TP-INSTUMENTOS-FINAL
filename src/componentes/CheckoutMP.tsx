@@ -19,7 +19,7 @@ function CheckoutMP ({montoCarrito = 0}) {
     }
 
     // Public Key, generalmente utilizada en el frontend
-    initMercadoPago('TEST-18c092bd-f68f-451d-a689-08da4f78d7d3', {locale: 'es-AR'});
+    initMercadoPago('TEST-41c8694d-4f7b-47da-b851-f95af15f73fd', {locale: 'es-AR'});
 
     // Actualizar el estado de carritoVacio basado en montoCarrito
     useEffect(() => {

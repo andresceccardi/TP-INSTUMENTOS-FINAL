@@ -49,6 +49,7 @@ export function Carrito() {
 
       // Mostrar el mensaje de éxito con el ID del pedido
       alert(`El pedido con id: ${pedidoId} se guardó correctamente.`);
+      limpiarCarrito();
 
       // Limpiar el carrito después de confirmar la compra
       //limpiarCarrito();
@@ -56,6 +57,7 @@ export function Carrito() {
       console.error('Error al confirmar la compra:', error);
       alert('Ocurrió un error al confirmar la compra. Inténtalo de nuevo más tarde.');
     }
+
   };
 
   return (

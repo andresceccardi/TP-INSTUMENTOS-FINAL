@@ -8,7 +8,6 @@ import "./../componentes/css/GrillaInstrumentos.css";
 import './css/ModalExcel.css';
 import { FaFileExcel } from 'react-icons/fa';
 
-
 const GenerarExcelButton: React.FC = () => {
   const [showModal, setShowModal] = useState(false);
   const [fechaDesde, setFechaDesde] = useState<Date | null>(null);
@@ -26,24 +25,26 @@ const GenerarExcelButton: React.FC = () => {
         fechaHasta: moment(fechaHasta).format('YYYY-MM-DD')
       };
   
-      // Llamar a la función para generar el reporte Excel
       const arrayBuffer = await generarExcel(filtro);
   
-      // Crear el Blob con el contenido del archivo
       const blob = new Blob([arrayBuffer], { type: 'application/vnd.openxmlformats-officedocument.spreadsheetml.sheet' });
   
-      // Crear un objeto URL para el blob
       const url = window.URL.createObjectURL(blob);
   
-      // Crear un enlace <a> para descargar el archivo
       const a = document.createElement('a');
       a.href = url;
-      a.download = 'pedidos.xlsx';
+
+      // Convertir las fechas a String
+      const fechaDesdeStr = moment(fechaDesde).format('YYYY-MM-DD');
+      const fechaHastaStr = moment(fechaHasta).format('YYYY-MM-DD');
+
+      // Incluir el rango de fechas en el nombre del archivo
+      a.download = 'pedidos_' + fechaDesdeStr + '_to_' + fechaHastaStr + '.xlsx';
+
       document.body.appendChild(a);
       a.click();
       document.body.removeChild(a);
   
-      // Liberar el objeto URL creado
       window.URL.revokeObjectURL(url);
   
     } catch (error) {
@@ -54,9 +55,8 @@ const GenerarExcelButton: React.FC = () => {
 
   return (
     <>
-    
-      <Button className="btn-excel" variant="primary" onClick={() => setShowModal(true)}>
-      <FaFileExcel />
+      <Button className="btn-excel no-outline" variant="primary" onClick={() => setShowModal(true)}>
+        <FaFileExcel />
       </Button>
 
       <Modal show={showModal} onHide={() => setShowModal(false)}>
